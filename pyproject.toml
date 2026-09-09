@@ -1,0 +1,23 @@
+[project]
+name = "dem-hash"
+version = "0.1.0"
+description = "DEM geohash indexing with LevelDB search"
+readme = "README.md"
+authors = [
+    { name = "gisman", email = "gisman@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "geohash2>=1.1",
+    "plyvel>=1.5.1",
+    "orjson>=3.10.0",
+    "pyproj>=3.8.0",
+    "rasterio>=1.4.0",
+]
+
+[project.scripts]
+dem-hash = "dem_hash:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
