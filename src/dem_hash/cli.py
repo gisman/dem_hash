@@ -997,7 +997,7 @@ def build_parser() -> argparse.ArgumentParser:
     p_compare.add_argument("--pg-host", default="localhost")
     p_compare.add_argument("--pg-port", type=int, default=5432)
     p_compare.add_argument("--pg-user", default="postgres")
-    p_compare.add_argument("--pg-password", default="xhddlfd0")
+    p_compare.add_argument("--pg-password", default="YOUR_PASSWORD")
     p_compare.add_argument("--pg-database", default="cube_db")
     p_compare.add_argument("--postgis-batch-size", type=int, default=5000)
     p_compare.set_defaults(func=cmd_compare_hash_postgis)
